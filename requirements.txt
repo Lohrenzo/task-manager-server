@@ -10,3 +10,4 @@ python-dotenv
 aioredis 
 upstash-redis
 upstash-ratelimit
+psycopg2-binary

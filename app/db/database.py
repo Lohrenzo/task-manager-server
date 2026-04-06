@@ -17,9 +17,11 @@ DATABASE_URL = os.getenv(
     "DATABASE_URL", "sqlite:///./test.db"
 )  # Default to SQLite for testing
 
+if DATABASE_URL.startswith("postgres://"):
+    DATABASE_URL = DATABASE_URL.replace("postgres://", "postgresql://", 1)
 
 # SQLAlchemy setup
-engine = create_engine(DATABASE_URL, echo=True)
+engine = create_engine(DATABASE_URL, echo=False)
 SessionLocal = sessionmaker(bind=engine)
 
 
