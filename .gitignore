@@ -1,0 +1,14 @@
+.snowflake/
+.vercel/
+next.user-config.*
+
+setup_structure.py
+**/__pycache__/
+
+# Environment variables
+.env*
+venv/
+
+# Common ignores
+.DS_Store
+*.db

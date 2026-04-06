@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+pydantic
+pytest
+pytest-asyncio
+httpx
+sqlalchemy
+psycopg2-binary
+python-dotenv
+aioredis 
+upstash-redis
+upstash-ratelimit
